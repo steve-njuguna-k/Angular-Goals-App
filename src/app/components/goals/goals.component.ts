@@ -25,7 +25,11 @@ export class GoalsComponent implements OnInit {
 
   completeGoal(isComplete: boolean, index: any){
     if (isComplete) {
-      this.goals.splice(index,1);
+      let markComplete = confirm(`Are you sure you want to mark ${this.goals[index].name} as complete?`)
+
+      if (markComplete){
+        this.goals.splice(index,1)
+      }
     }
   }
 
