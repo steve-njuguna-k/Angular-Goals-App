@@ -1,4 +1,10 @@
-# Goals
+Angular Goals Application
+-------------------------
+This is an Angular Goals Application for practising Angular concepts.
+
+![](https://github.com/steve-njuguna-k/Angular-Goals-App/blob/master/screenshots/1.PNG)
+
+Done by Steve Njuguna
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
 
@@ -25,3 +31,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+© 2021 Steve Njuguna
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
