@@ -14,10 +14,14 @@ export class GoalsComponent implements OnInit {
     new Goal(4,'Get Dog Food','Pupper likes expensive snacks',new Date(2022,0,18)),
     new Goal(5,'Solve math homework','Damn Math',new Date(2022,2,14)),
     new Goal(6,'Plot my world domination plan','Cause I am an evil overlord',new Date(2022,3,14)),
-    new Goal(7,'Go for jogging','I must lose these 5kg',new Date(2022,7,18)),
-    new Goal(8,'Play PS Games','God of War is waiting for me',new Date(2022,10,14)),
-    new Goal(9,'Finish up my class assignment','It is due by Monday',new Date(2022,5,18)),
   ];
+
+  addNewGoal(goal: any){
+    let goalLength = this.goals.length;
+    goal.id = goalLength + 1;
+    goal.completeDate = new Date(goal.completeDate)
+    this.goals.push(goal)
+  }
 
   toggleDetails(index: any){
     this.goals[index].showDescription = !this.goals[index].showDescription;
